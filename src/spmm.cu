@@ -29,9 +29,12 @@
 
 #include <cusparse.h>
 
+#include <ATen/ATen.h>
+#include <ATen/Tensor.h>
 #include <ATen/cuda/CUDAContext.h>
 #include <ATen/cuda/CUDAUtils.h>
 #include <c10/cuda/CUDACachingAllocator.h>
+#include <c10/core/TensorImpl.h>
 #include <torch/extension.h>
 #include <torch/script.h>
 
